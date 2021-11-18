@@ -7,7 +7,7 @@ export const Home = () => (
 		<div>
 			<div className="dropdown">
 				<button
-					className="btn btn-secondary dropdown-toggle"
+					className="seleccion-boton btn btn-secondary dropdown-toggle"
 					type="button"
 					id="dropdownMenuButton"
 					data-toggle="dropdown"
@@ -27,6 +27,13 @@ export const Home = () => (
 					</Link>
 				</div>
 			</div>
+
+			<select className="custom-select">
+				<option selected>Open this select menu</option>
+				<option value="1">One</option>
+				<option value="2">Two</option>
+				<option value="3">Three</option>
+			</select>
 		</div>
 	</div>
 );
