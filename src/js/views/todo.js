@@ -1,16 +1,17 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
+import { Seguros } from "../views/seguros";
 
 import { Context } from "../store/appContext";
 
-import "../../styles/demo.scss";
+import "../../styles/todo.scss";
 
-export const Demo = () => {
-	const { store, actions } = useContext(Context);
+export const Todo = () => {
+	/* const { store, actions } = useContext(Context); */
 
 	return (
 		<div className="container">
-			<ul className="list-group">
+			{/* <ul className="list-group">
 				{store.demo.map((item, index) => {
 					return (
 						<li
@@ -37,7 +38,10 @@ export const Demo = () => {
 			<br />
 			<Link to="/">
 				<button className="btn btn-primary">Back home</button>
-			</Link>
+			</Link> */}
+			<div className="seguros">
+				<Seguros />
+			</div>
 		</div>
 	);
 };

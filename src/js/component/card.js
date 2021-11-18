@@ -13,24 +13,23 @@ export const Card = props => {
 		<div>
 			<div className="ficha">
 				<div className="ficha-body">
-					<div>
+					<div className="imagen-label">
 						<img
 							className="imgseguro"
 							src="https://ventaenlinea.bicevida.cl/pub/media/catalog/product/cache/69eb2560c3d44c78f7327201dc5a282b/i/m/img-01.jpg"
 						/>
-						<label>
-							<span className="label-text">Texto 1</span>
-						</label>
+						<div className="texto-flotante">
+							<label>
+								<span className="label-text">label</span>
+							</label>
+						</div>
 					</div>
-					<div>
+					<div className="texto-bajoimg">
 						<h5 className="ficha-title">
 							{props.title}
 							Titulo
 						</h5>
 						<p className="parrafo">Parrafo</p>
-					</div>
-					<div>
-						<button className="boton compra" />
 					</div>
 				</div>
 			</div>
