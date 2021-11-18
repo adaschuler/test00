@@ -7,29 +7,6 @@ export const Home = () => (
 		<div>
 			<div className="dropdown">
 				<button
-					className="btn btn-danger dropdown-toggle"
-					type="button"
-					id="dropdownMenuButton1"
-					data-bs-toggle="dropdown"
-					aria-expanded="false">
-					Conoce tus opciones de seguros
-				</button>
-				<ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-					<li>
-						<Link className="dropdown-item" href="#">
-							Action
-						</Link>
-					</li>
-					<li>
-						<Link className="dropdown-item" href="#">
-							Another action
-						</Link>
-					</li>
-				</ul>
-			</div>
-
-			<div className="dropdown">
-				<button
 					className="btn btn-secondary dropdown-toggle"
 					type="button"
 					id="dropdownMenuButton"
