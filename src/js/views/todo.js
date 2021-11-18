@@ -10,7 +10,7 @@ export const Todo = () => {
 	/* const { store, actions } = useContext(Context); */
 
 	return (
-		<div className="container">
+		<div className="">
 			{/* <ul className="list-group">
 				{store.demo.map((item, index) => {
 					return (
@@ -39,7 +39,7 @@ export const Todo = () => {
 			<Link to="/">
 				<button className="btn btn-primary">Back home</button>
 			</Link> */}
-			<div className="seguros">
+			<div className="seguros container">
 				<Seguros />
 			</div>
 		</div>

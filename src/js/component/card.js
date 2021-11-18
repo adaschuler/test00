@@ -5,32 +5,28 @@ import { Link, useHistory } from "react-router-dom";
 import "../../styles/card.scss";
 
 export const Card = props => {
-	const { store, actions } = useContext(Context);
+	//Intente usar el store inicialmente para resolver esta parte, pero debido a que no logre manipular
+	//los datos desde la API (aunque si los toma), opte por otra forma, dejo comentado esta parte del
+	//codigo ya que creo estaba cerca de la solucion.
 
-	const history = useHistory();
+	/* const { store, actions } = useContext(Context);
+
+	const history = useHistory(); */
 
 	return (
-		<div>
-			<div className="ficha">
-				<div className="ficha-body">
-					<div className="imagen-label">
-						<img
-							className="imgseguro"
-							src="https://ventaenlinea.bicevida.cl/pub/media/catalog/product/cache/69eb2560c3d44c78f7327201dc5a282b/i/m/img-01.jpg"
-						/>
-						<div className="texto-flotante">
-							<label>
-								<span className="label-text">label</span>
-							</label>
-						</div>
+		<div className="col-6 ficha">
+			<div className="ficha-body">
+				<div className="imagen-label">
+					<img className="imgseguro" src={props.imagen} />
+					<div className="texto-flotante">
+						<label>
+							<span className="label-text">{props.cost}</span>
+						</label>
 					</div>
-					<div className="texto-bajoimg">
-						<h5 className="ficha-title">
-							{props.title}
-							Titulo
-						</h5>
-						<p className="parrafo">Parrafo</p>
-					</div>
+				</div>
+				<div className="texto-bajoimg">
+					<h5 className="ficha-title">{props.title}</h5>
+					<p className="parrafo">{props.description}</p>
 				</div>
 			</div>
 		</div>
@@ -38,9 +34,8 @@ export const Card = props => {
 };
 
 Card.propTypes = {
-	title: PropTypes.string
-	/* description: PropTypes.string,
-	cost: PropTypes.string,
 	imagen: PropTypes.string,
-	id: PropTypes.object */
+	cost: PropTypes.string,
+	title: PropTypes.string,
+	description: PropTypes.string
 };
