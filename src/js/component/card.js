@@ -6,8 +6,7 @@ import "../../styles/card.scss";
 
 export const Card = props => {
 	//Intente usar el store inicialmente para resolver esta parte, pero debido a que no logre manipular
-	//los datos desde la API (aunque si los toma), opte por otra forma, dejo comentado esta parte del
-	//codigo ya que creo estaba cerca de la solucion.
+	//los datos desde la API (aunque si los toma), opte por otra forma para mostrar otros aspectos del test.
 
 	/* const { store, actions } = useContext(Context);
 

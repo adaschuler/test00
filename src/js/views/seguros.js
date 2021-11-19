@@ -6,7 +6,8 @@ import { Link } from "react-router-dom";
 export const Seguros = () => {
 	//Esta parte no la deje comentada puesto el action y el uso de store quedaron funcionales,
 	//Pueden verlo en la consola
-	//No supe traerlo al front al tener un ID especifico, no habia trabajado con esa restriccion.
+	//No supe traer la info de la API al front, no habia trabajado con tener un ID especifico como restriccion.
+	//Asi que cambie la logica para mostrar otros aspectos del test
 
 	const { store, actions } = useContext(Context);
 
@@ -34,6 +35,7 @@ export const Seguros = () => {
 				/>
 			</div>
 			<div>
+				{/* //Esto me hubiese servido para interpretar dentro del front los distintos valores de la API */}
 				{/* {store.productsList.map((item, index) => {
 					return (
 						<Card

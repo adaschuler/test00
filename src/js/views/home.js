@@ -3,21 +3,29 @@ import "../../styles/home.scss";
 import { Link } from "react-router-dom";
 import { Form, Button } from "react-bootstrap";
 
-export const Home = () => (
-	<div className="container text-center mt-5">
-		<div className="d-flex justify-content-center">
-			<Form className="contact-form center col-xs-10 col-sm-8 col-md-4 mt-3">
-				<Form.Select id="estilos-selector" aria-label="Default select example">
-					<option id="conocer">Conocer seguros</option>
-					<option value="/seguros58">Seguro Vida Activa</option>
-					<option value="/seguros59">Seguro Viaje Protegido</option>
-				</Form.Select>
-				{/* <Form.Control value="select" onChange="" type="select" /> */}
-				{/* <Form.Control className="mt-3 seleccion-boton" type="submit" onClick="" /> */}
-				<Button ClassName="seleccion-boton" variant="primary" type="submit">
-					Mas
-				</Button>
-			</Form>
+export const Home = () => {
+	const referencia = React.createRef();
+
+	function seleccion() {
+		console.log("Hola:", referencia);
+		//Funcion que pase el value como una URL segun lo escogido, en este momento la funcion se ejecuta,
+		//pero queda en form.select. Ver opciones.
+	}
+
+	return (
+		<div className="container text-center mt-5">
+			<div className="d-flex justify-content-center">
+				<Form className="contact-form center col-xs-10 col-sm-8 col-md-4 mt-3">
+					<Form.Select id="estilos-selector" ref={referencia} aria-label="Default select example">
+						<option id="conocer">Conocer seguros</option>
+						<option value="/seguros58">Seguro Vida Activa</option>
+						<option value="/seguros59">Seguro Viaje Protegido</option>
+					</Form.Select>
+					<Button ClassName="seleccion-boton" variant="primary" type="submit" onClick={seleccion}>
+						Mas
+					</Button>
+				</Form>
+			</div>
 		</div>
-	</div>
-);
+	);
+};
