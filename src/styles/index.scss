@@ -1,3 +1,9 @@
+html { height: 100%; }
+body {
+    min-height:100%; 
+    position:relative; 
+    padding-bottom:40px; 
+}
 .navbar {
     position: relative;
     display: flex;
@@ -19,8 +25,6 @@ A:visited {
     text-decoration: none 
 }
 .seleccion-boton{
-    display: flex;
-    flex-direction: row;
     padding: 8px 32px;
     width: 113px;
     height: 48px;
@@ -35,17 +39,34 @@ A:visited {
     line-height: 32px;
     text-align: center;
     color: #FFFFFF;
+    margin: 10px;
 }
 #estilos-selector{
     background: #FFFFFF;
     border: 1px solid #DDE3ED;
     box-sizing: border-box;
     border-radius: 4px;
-}
-#conocer{
+    height: 45px;
+    width: 250px;
+    background: #FFFFFF;
+    border: 1px solid #DDE3ED;
+    box-sizing: border-box;
+    border-radius: 4px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
     color: #AFBACC;
+
+}
+.conocer{
+    background: #FFFFFF;
+    border: 2px solid #1F61F7;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #1F61F7;
 }

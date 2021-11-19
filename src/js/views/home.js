@@ -15,13 +15,17 @@ export const Home = () => {
 	return (
 		<div className="container text-center mt-5">
 			<div className="d-flex justify-content-center">
-				<Form className="contact-form center col-xs-10 col-sm-8 col-md-4 mt-3">
+				<Form className="contact-form center col-xs-10 col-sm-8 col-md-4 mt-3 mb-5">
 					<Form.Select id="estilos-selector" ref={referencia} aria-label="Default select example">
-						<option id="conocer">Conocer seguros</option>
-						<option value="/seguros58">Seguro Vida Activa</option>
-						<option value="/seguros59">Seguro Viaje Protegido</option>
+						<option className="conocer">Conocer seguros</option>
+						<option className="conocer" value="/seguros58">
+							Seguro Vida Activa
+						</option>
+						<option className="conocer" value="/seguros59">
+							Seguro Viaje Protegido
+						</option>
 					</Form.Select>
-					<Button ClassName="seleccion-boton" variant="primary" type="submit" onClick={seleccion}>
+					<Button className="seleccion-boton mt-3" variant="primary" type="submit" onClick={seleccion}>
 						Mas
 					</Button>
 				</Form>

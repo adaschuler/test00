@@ -9,7 +9,7 @@ import "../../styles/todo.scss";
 export const Todo = () => {
 	return (
 		<div className="">
-			<div className="seguros container">
+			<div className="seguros container mb-5">
 				<Seguros />
 			</div>
 		</div>
