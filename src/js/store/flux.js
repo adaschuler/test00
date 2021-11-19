@@ -14,19 +14,6 @@ const getState = ({ getStore, getActions, setStore }) => {
 					setStore({ productsList: result.data });
 				});
 			},
-			/* axiosProducts: () => {
-				const URL = "https://pokeapi.co/api/v2/pokemon/";
-				const OBJCONFIG = {
-					method: "GET",
-					headers: {
-						"Content-type": "aplication/json"
-					}
-				};
-
-				fetch(URL, OBJCONFIG)
-					.then(res => res.json()) //Texto plano
-					.then(data => setStore({ productsList: data.results })); //Obtienes los datos
-			}, */
 			exampleFunction: () => {
 				getActions().changeColor(0, "green");
 			},

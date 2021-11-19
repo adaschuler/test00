@@ -36,7 +36,16 @@ A:visited {
     text-align: center;
     color: #FFFFFF;
 }
-.show>.dropdown-menu {
-    display: block;
-    position: absolute;
-  }
+#estilos-selector{
+    background: #FFFFFF;
+    border: 1px solid #DDE3ED;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+#conocer{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #AFBACC;
+}

@@ -1,39 +1,23 @@
 import React from "react";
 import "../../styles/home.scss";
 import { Link } from "react-router-dom";
+import { Form, Button } from "react-bootstrap";
 
 export const Home = () => (
-	<div className="text-center mt-5">
-		<div>
-			<div className="dropdown">
-				<button
-					className="seleccion-boton btn btn-secondary dropdown-toggle"
-					type="button"
-					id="dropdownMenuButton"
-					data-toggle="dropdown"
-					aria-haspopup="true"
-					aria-expanded="false">
-					Dropdown button
-				</button>
-				<div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-					<Link className="dropdown-item" href="#">
-						Action
-					</Link>
-					<Link className="dropdown-item" href="#">
-						Another action
-					</Link>
-					<Link className="dropdown-item" href="#">
-						Something else here
-					</Link>
-				</div>
-			</div>
-
-			<select className="custom-select">
-				<option selected>Open this select menu</option>
-				<option value="1">One</option>
-				<option value="2">Two</option>
-				<option value="3">Three</option>
-			</select>
+	<div className="container text-center mt-5">
+		<div className="d-flex justify-content-center">
+			<Form className="contact-form center col-xs-10 col-sm-8 col-md-4 mt-3">
+				<Form.Select id="estilos-selector" aria-label="Default select example">
+					<option id="conocer">Conocer seguros</option>
+					<option value="/seguros58">Seguro Vida Activa</option>
+					<option value="/seguros59">Seguro Viaje Protegido</option>
+				</Form.Select>
+				{/* <Form.Control value="select" onChange="" type="select" /> */}
+				{/* <Form.Control className="mt-3 seleccion-boton" type="submit" onClick="" /> */}
+				<Button ClassName="seleccion-boton" variant="primary" type="submit">
+					Mas
+				</Button>
+			</Form>
 		</div>
 	</div>
 );
